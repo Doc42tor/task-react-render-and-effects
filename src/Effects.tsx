@@ -14,4 +14,5 @@ export function Effects(props: { sourceId: string }) {
             unsubscribe(props.sourceId, callback)
         }
     }, [props.sourceId])
+    return <div>{props.sourceId}: {msg}</div>;
 }
